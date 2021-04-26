@@ -48,6 +48,11 @@ shinyUI(fluidPage(
                 margin-left: 30px;
             }
             
+            #github {
+                margin-left: 100px;
+            }
+            
+            
             .plotly {
                 margin-top: 50px;
             }
@@ -172,6 +177,17 @@ shinyUI(fluidPage(
                             )
                         )
                     )         
+                ),
+                tabPanel("About",
+                    fluidPage(
+                        fluidRow(
+                            column(12,
+                                h5("This project has been created as an assignment for Data visualisation course, under the supervision of Ph. D. Dariusz Brzeziński. The course run at Poznań University of Technology. Source code of this project is publicly available on my github:"),
+                                a(id="github", href = "https://github.com/jkarolczak/the-office-episodes", "https://github.com/jkarolczak/the-office-episodes"),
+                                h5("I hope you to have fun using this dashboard. If not, if you want to see any improvement or new feature, create an issue on github. I'm also opened to pull requests.  Feel free to reuse this code for your own purpose.")
+                            )
+                        )
+                    )
                 )
             
             )
